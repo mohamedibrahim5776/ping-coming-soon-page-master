@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Franklin', sans-serif;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+li {
+    list-style: none;
+}
+.active {
+    display: block;
+}
+/* img {
+    width: 100%;
+} */
+.container {
+    margin: 40px auto;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    max-width: 1000px;
+}
+
+.container img:first-child {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 40px;
+}
+h1 {
+    font-size: 30px;
+    color: hsl(0, 0%, 59%);
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+h1 span {
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+}
+.container p {
+    margin-bottom:15px ;
+}
+.inputs {
+    display: grid;
+    position: relative;
+}
+.inputs input:first-child {
+    border-radius: 30px;
+    font-size: 16px;
+    padding:15px 30px;
+    margin-bottom: 35px;
+}
+.inputs input:first-child::placeholder{
+    color: hsl(223, 100%, 88%);
+}
+.inputs input:first-child:focus {
+    outline: none;
+}
+.borderRed {
+    border: solid 1px hsl(354, 100%, 66%);
+}
+.border {
+    border: solid 1px hsl(223, 87%, 63%);
+}
+span {
+    position: absolute;
+    font-size: 11px;
+    top: 55px;
+    left: 25px;
+    color: hsl(354, 100%, 66%);
+    display: none;
+}
+
+.inputs input:nth-of-type(2) {
+    border-radius: 30px;
+    font-size: 15px;
+    border: none;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    margin-bottom: 80px;
+}
+.inputs input:nth-of-type(2):hover {
+    background-color: hsl(223, 100%, 68%);
+}
+img:nth-of-type(2) {
+    width: 100%;
+    margin: 50px 0 80px;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+ul li {
+    margin-left: 40px;
+}
+li img {
+    width: 25px;
+}
+footer {
+    margin-top: 30px;
+    font-size: 16px;
+    color: hsl(0, 0%, 59%);
+}
+@media (min-width:567px) {
+    .inputs {
+        grid-template-columns: 3fr 1fr;
+    }
+    .inputs input:first-child {
+        margin-bottom:70px;
+        margin-right:25px;
+    }
+    .inputs input:nth-of-type(2) {
+        margin-bottom:70px;
+    }
+}

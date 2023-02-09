@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;1,600&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Ping coming soon page</title>
+  <link rel="stylesheet" href="src/index.css">
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); 
+    font-size: 13px;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="images/logo.svg" alt="">
+    <h1>we are launching <span class="bold">soon!</span></h1>
+    <p>Subscribe and get notified</p>
+    <div class="inputs">
+      <input type="email" class="borderRed border" id="email" placeholder="your email address...">
+      <span class="" id="regex">Please provide a valid email address</span>
+      <span class="" id="empty">Whoops! It looks like you forgot to add your email</span>
+
+      <input onclick="check()" type="submit" value="notify me">
+    </div>
+    <img src="images/illustration-dashboard.png" alt="">
+    <ul>
+      <li><img src="images/facebook.svg" alt=""></li>
+      <li><img src="images/twitter.svg" alt=""></li>
+      <li><img src="images/instagram.svg" alt=""></li>
+    </ul>
+    <footer>
+      &copy; Copyright Ping. All rights reserved.
+    </footer>
+  </div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">mohamed ibrahim</a>.
+    </p>
+    <script src="src/index.js"></script>
+  </footer>
+</body>
+</html>
